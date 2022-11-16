@@ -1,0 +1,40 @@
+/*socials for team*/
+.socialTeam__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* .socialTeam__item {
+} */
+
+.socialTeam__link {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socialTeam__link:hover,
+.socialTeam__link:focus {
+    background-color: var(--primary-accent-color);
+}
+
+.socialTeam-icon {
+    fill: var(--svg-color-primary);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    .socialTeam__link:hover &,
+    .socialTeam__link:focus & {
+        fill: var(--primary-bg-color);
+    }
+}
+

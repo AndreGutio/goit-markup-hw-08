@@ -1,0 +1,11 @@
+.clients-icon {
+    fill: var(---svg-color-primary);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: var(--primary-accent-color);
+    }
+}
