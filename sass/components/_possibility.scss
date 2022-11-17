@@ -1,5 +1,16 @@
 .possibility {
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 480px) {
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 0;
+    }
 }
 
 /*.possibility__title {
@@ -20,12 +31,19 @@
 
 .possibility__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;      
 }
 
 .possibility__item {
-    width: 270px;
-
+    width: 450px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
     &::before {
         display: block;
         content: "";
@@ -66,6 +84,10 @@
     text-transform: uppercase;
     color: var(--primary-title-color);
     margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: 767px) {
+        text-align: left;
+    }
 }
 
 .possibility-text {

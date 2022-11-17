@@ -1,21 +1,30 @@
 .team {
     background: var(--light-bg-color);
-    padding: 94px 0;
+    padding: 60px 0;
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
 
     &__title {
-        font-family: inherit;
         font-weight: 700;
-        font-size: 36px;
-        line-height: calc(42 / 36);
         text-align: center;
-        letter-spacing: 0.03em;
         color: var(--primary-title-color);
-        margin-bottom: 50px;
+        font-size: 28px;
+        line-height: calc(33 / 28);
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;
+             @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            line-height: calc(42 / 36);
+            margin-bottom: 50px;
+        }
     }
 
     &__list {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
     }
 
     &__item {
@@ -26,8 +35,30 @@
         border-radius: 0px 0px 4px 4px;
     }
 
-    /*&-icon {
-    }*/
+    &-icon {
+        width: 450px;
+        height: 460px;
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 374px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+            height: 260px;
+        }
+    }
+
+    &-box {
+        padding: 30px 122px 24px 122px;
+
+        @media screen and (min-width: 768px) {
+            padding: 30px 74px 24px 74px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 30px 32px;
+        }
+    }
 
     &-box__title {
         font-weight: 500;
@@ -39,9 +70,7 @@
         margin-bottom: 10px;
     }
 
-    &-box {
-        padding: 30px 32px;
-    }
+  
 
     &-text {
         font-size: 16px;
