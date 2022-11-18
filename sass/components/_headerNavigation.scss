@@ -1,7 +1,10 @@
 .header-navigation__list {
+    display: none;
+    @media screen and (min-width: 768px) {
     display: flex;
     justify-content: flex-start;
     gap: 50px;
+    }
 }
 
 /*.header-nav__item {
@@ -27,6 +30,21 @@
     &:hover,
     &:focus {
         color: var(--primary-accent-color);
+    }
+}
+
+.current::after {
+    @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    margin-top: 28px;
+    display: block;
+    content: "";
+    background: #2196f3;
+    border-radius: 2px;
+    height: 4px;
     }
 }
 

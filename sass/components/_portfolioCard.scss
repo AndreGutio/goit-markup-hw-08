@@ -1,18 +1,18 @@
-.portfolio-card {
+ .portfolio-card {
     padding: 20px 24px;
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: #eeeeee;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #eeeeee;
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-left-color: #eeeeee;
+    border: 1px solid #eeeeee;
+    border-top: none;
 }
 
-/* .portfolio-img {
-} */
+ .portfolio-img {
+    max-width: 450px;
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
+} 
 
 .portfolio-card__title {
     font-weight: 700;

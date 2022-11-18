@@ -19,13 +19,18 @@
           <nav class="header-navigation">
             <a class="header-logo link" href="./index.html"
               >Web<span class="header-logos">Studio</span></a>
+              <button burger-open class="header__menu-burger" type="button">
+                <svg width="40px" height="40px">
+                  <use  href="./images/icons.svg#icon-menu-burger"></use>
+                </svg>
+              </button>
             <ul class="header-navigation__list list">
               <li class="header-navigation__item">
-                <a class="header-navigation__link link" href="./index.html"
+                <a class="header-navigation__link current link" href="./index.html"
                   >Студія</a>
               </li>
               <li class="header-navigation__item">
-                <a class="header-navigation__link current link" href="./portfolio.html"
+                <a class="header-navigation__link link" href="./portfolio.html"
                   >Портфоліо</a>
               </li>
               <li class="header-navigation__item">
@@ -33,7 +38,7 @@
               </li>
             </ul>
           </nav>
-          <ul class="header-contact__list list">
+                    <ul class="header-contact__list list">
             <li class="header-contact__item">
               <a class="header-contact__link link" href="mailto:info@devstudio.com">
                 <svg class="contact-icon" width="16px" height="12px">
@@ -89,11 +94,11 @@
                   </div>
                 </div>
                 <div class="portfolio-card">
-                  <h2 class="portfolio-card__title">Технокряк</h2>
-                  <p class="portfolio-text">Веб-сайт</p>
+                  <h2 class="portfolio-card__title">Ресторан Seafood</h2>
+                  <p class="portfolio-text">Додаток</p>
                 </div>
               </a>
-            </li>
+            </li> 
             <li class="portfolio__item">
               <a class="portfolio__link link" href="#">
                 <div class="portfolio-box">
@@ -107,11 +112,11 @@
                   </div>
                 </div>
                 <div class="portfolio-card">
-                  <h2 class="portfolio-card__title">Постер New Orlean vs Golden Star</h2>
-                  <p class="portfolio-text">Дизайн</p>
+                  <h2 class="portfolio-card__title">Ресторан Seafood</h2>
+                  <p class="portfolio-text">Додаток</p>
                 </div>
               </a>
-            </li>
+            </li> 
             <li class="portfolio__item">
               <a class="portfolio__link link" href="#">
                 <div class="portfolio-box">
@@ -244,9 +249,10 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+  <footer class="footer">
       <div class="container container-footer">
-        <div class="footer-address">
+        <div class="footer__wrap">
+          <div class="footer-address">
           <a class="footer-logo link" href="./index.html"
             >Web<span class="footer-logos">Studio</span></a>
           <address>
@@ -274,7 +280,7 @@
         </div>
         <div class="footer-social">
           <p class="footer-social__title">ПРИЄДНУЙТЕСЬ</p>
-          <ul class="footer-social__list list">
+           <ul class="footer-social__list list">
             <li class="footer-social__item">
               <a class="footer-social__link" href="">
                 <svg class="footerSocial-icon" width="20" height="20">
@@ -305,6 +311,7 @@
             </li>
           </ul>
         </div>
+        </div>
         <div class="footer-subscribe">
           <p class="footer-subscribe__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
           <form class="subscribe-form">
@@ -319,5 +326,45 @@
         </div>
       </div>
     </footer>
+         <div class="modal-burger is-hidden" modal-burger> 
+        <button burger-close class="modal-burger__close-btn" type="button">
+          <svg class="modal-burger__close-icon" width="20" height="20">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+         <ul class="modal-burger__list-nav list">
+          <li class="modal-burger__item-nav">
+            <a class="modal-burger__link-nav link" href="./index.html">Студія</a>
+          </li>
+          <li class="modal-burger__item-nav">
+            <a class="modal-burger__link-nav current link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="modal-burger__item-nav">
+            <a class="modal-burger__link-nav link" href="#">Контакти</a>
+          </li>
+          </ul>
+         <div>
+         <ul class="modal-burger__list-contact list">
+          <li class="modal-burger__item-contact">+38 096 111 11 11</li>
+          <li class="modal-burger__item-contact">info@devstudio.com</li>
+         </ul>
+         <ul class="modal-burger__list-social list">
+          <li class="modal-burger__item-social">
+            <a class="modal-burger__link-social link" href="">Instagram</a>
+          </li>
+          <li class="modal-burger__item-social">
+            <a class="modal-burger__link-social link" href="">Twitter</a>
+          </li>
+          <li class="modal-burger__item-social">
+            <a class="modal-burger__link-social link" href="">Facebook</a>
+          </li>
+          <li class="modal-burger__item-social">
+            <a class="modal-burger__link-social link" href="">LinkedIn</a>
+          </li>
+         </ul>
+         </div>
+    </div>
+    <script src="./js/modalBurger.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

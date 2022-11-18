@@ -1,6 +1,6 @@
 .portfolio-overlay {
     position: absolute;
-    top: 0;
+    top: 0; 
     left: 0;
     width: 100%;
     /* height: 100%; */
@@ -16,8 +16,8 @@
 }
 
 .overlay-text {
-    padding: 63px 24px;
-    width: 322px;
+    padding: 77px 24px;
+    width: 402px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -25,4 +25,12 @@
     line-height: calc(28 / 18);
     letter-spacing: 0.03em;
     color: var(--primary-bg-color);
+    @media screen and (min-width: 768px) {
+        padding: 49px 24px;
+        width: 306px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 63px 24px;
+        width: 322px; 
+    }  
 }

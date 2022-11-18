@@ -1,8 +1,8 @@
 .container {
-    margin-right: auto;
-    margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 
     @media screen and (min-width: 480px) {
         width: 480px;
@@ -19,5 +19,12 @@
 
 .container-footer {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    
 }

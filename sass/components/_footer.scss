@@ -3,3 +3,16 @@
     padding: 60px 0;
     border-bottom: 1px;
 }
+
+.footer__wrap {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        gap: 165px;
+        align-items: baseline;
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        gap: 70px;
+    }
+}

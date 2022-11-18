@@ -1,5 +1,9 @@
 .filter {
-    padding: 94px 0;
+    padding: 60px 0;
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;    
+    }
+    
 }
 
 /*.filter__title {
@@ -7,9 +11,16 @@
 
 .filter__list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 /*.filter__item {
