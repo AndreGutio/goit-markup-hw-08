@@ -58,15 +58,9 @@ body {
 }
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 480px;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -484,14 +478,10 @@ body {
   background: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-  background-size: cover;
   padding: 118px 0;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   height: 400px;
   max-width: 767px;
 }

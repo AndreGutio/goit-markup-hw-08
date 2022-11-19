@@ -19,18 +19,18 @@
           <nav class="header-navigation">
             <a class="header-logo link" href="./index.html"
               >Web<span class="header-logos">Studio</span></a>
-              <button burger-open class="header__menu-burger" type="button">
+              <button class="header__menu-burger js-open-menu" type="button">
                 <svg width="40px" height="40px">
                   <use  href="./images/icons.svg#icon-menu-burger"></use>
                 </svg>
               </button>
             <ul class="header-navigation__list list">
               <li class="header-navigation__item">
-                <a class="header-navigation__link current link" href="./index.html"
+                <a class="header-navigation__link link" href="./index.html"
                   >Студія</a>
               </li>
               <li class="header-navigation__item">
-                <a class="header-navigation__link link" href="./portfolio.html"
+                <a class="header-navigation__link current link" href="./portfolio.html"
                   >Портфоліо</a>
               </li>
               <li class="header-navigation__item">
@@ -38,7 +38,8 @@
               </li>
             </ul>
           </nav>
-                    <ul class="header-contact__list list">
+          
+          <ul class="header-contact__list list">
             <li class="header-contact__item">
               <a class="header-contact__link link" href="mailto:info@devstudio.com">
                 <svg class="contact-icon" width="16px" height="12px">
@@ -326,9 +327,9 @@
         </div>
       </div>
     </footer>
-         <div class="modal-burger is-hidden" modal-burger> 
-        <button burger-close class="modal-burger__close-btn" type="button">
-          <svg class="modal-burger__close-icon" width="20" height="20">
+<div class="modal-burger is-hidden js-menu-container" > 
+        <button class="modal-burger__close-btn js-close-menu" type="button">
+          <svg class="modal-burger__close-icon" aria-label="Закриття меню" width="20" height="20">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -345,26 +346,30 @@
           </ul>
          <div>
          <ul class="modal-burger__list-contact list">
-          <li class="modal-burger__item-contact">+38 096 111 11 11</li>
-          <li class="modal-burger__item-contact">info@devstudio.com</li>
+          <li class="modal-burger__item-contact">
+            <a class="modal-burger__link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="modal-burger__item-contact">
+            <a class="modal-burger__link-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
          </ul>
          <ul class="modal-burger__list-social list">
           <li class="modal-burger__item-social">
-            <a class="modal-burger__link-social link" href="">Instagram</a>
+            <a class="modal-burger__link-social link" href="#">Instagram</a>
           </li>
           <li class="modal-burger__item-social">
-            <a class="modal-burger__link-social link" href="">Twitter</a>
+            <a class="modal-burger__link-social link" href="#">Twitter</a>
           </li>
           <li class="modal-burger__item-social">
-            <a class="modal-burger__link-social link" href="">Facebook</a>
+            <a class="modal-burger__link-social link" href="#">Facebook</a>
           </li>
           <li class="modal-burger__item-social">
-            <a class="modal-burger__link-social link" href="">LinkedIn</a>
+            <a class="modal-burger__link-social link" href="#">LinkedIn</a>
           </li>
          </ul>
          </div>
     </div>
-    <script src="./js/modalBurger.js"></script>
-    <script src="./js/modal.js"></script>
+      <script src="./js/mobile-menu.js"></script>
+      <script src="./js/modal.js"></script>
   </body>
 </html>

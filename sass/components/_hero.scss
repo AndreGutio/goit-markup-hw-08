@@ -2,27 +2,48 @@
     background: #c4c4c4;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/hero.jpg);
-    background-size: cover;
+        url(../../images/index/mobile/hero.jpg);
     padding  : 118px 0;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     height: 400px;
-    max-width: 767px;
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../../images/index/mobile/hero@2x.jpg);
+        }
+
     @media screen and (min-width: 768px) {
-        max-width: 1199px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../../images/index/tablet/hero.jpg);
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../../images/index/tablet/hero@2x.jpg);
     }
+}
     @media screen and (min-width: 1200px) {
         padding: 200px 0;
         height: 600px;
-        max-width: 1600px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../../images/index/desktop/hero.jpg);
+        
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../../images/index/desktop/hero@2x.jpg);
     }
 }
-
+}
 .hero-title {
     font-weight: 900;
     font-size: 26px;
