@@ -107,19 +107,34 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list list">
             <li class="work__item">
-              <img class="work-icon" src="images/codding.jpg" alt="Кодування" width="370">
+              <img class="work-icon"
+              srcset="./images/studio/desktop/codding.jpg 1x,
+                      ./images/studio/desktop/codding@2x.jpg 2x"
+              src="./images/studio/desktop/codding.jpg" 
+              alt="Кодування" 
+              width="370">
               <p class="work-icon__text">
                 ДЕСКТОПНІ ДОДАТКИ
               </p>
             </li>
             <li class="work__item">
-              <img class="work-icon" src="images/design.jpg" alt="Дизайн" width="370">
+              <img class="work-icon" 
+              srcset="./images/studio/desktop/design.jpg 1x,
+                      ./images/studio/desktop/design@2x.jpg 2x" 
+              src="./images/studio/desktop/design.jpg" 
+              alt="Дизайн" 
+              width="370">
               <p class="work-icon__text">
                 МОБІЛЬНІ ДОДАТКИ
               </p>
             </li>
             <li class="work__item">
-              <img class="work-icon" src="images/coloripad.jpg" alt="Вибір кольору" width="370">
+              <img class="work-icon" 
+              srcset="./images/studio/desktop/coloripad.jpg 1x,
+                      ./images/studio/desktop/coloripad@2x.jpg 2x" 
+              src="./images/studio/desktop/coloripad.jpg" 
+              alt="Вибір кольору" 
+              width="370">
               <p class="work-icon__text">
                 ДИЗАЙНЕРСЬКІ РІШЕННЯ
               </p>
@@ -132,8 +147,19 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
-              <img class="team-icon" src="images/ihor.jpg" alt="Ігор" width="270">
-              <div class="team-box">
+              <picture>
+                <source srcset="./images/studio/desktop/ihor.jpg 1x, 
+                                ./images/studio/desktop/ihor@2x.jpg 2x" 
+                media="(min-width: 1200px)">
+                <source srcset="./images/studio/tablet/ihor.jpg 1x, 
+                                ./images/studio/tablet/ihor@2x.jpg 2x" 
+                media="(min-width: 768px)">
+                <source srcset="./images/studio/mobile/ihor.jpg 1x, 
+                                ./images/studio/mobile/ihor@2x.jpg 2x" 
+                media="(max-width: 767px)">
+                <img class="team-icon" src="./images/studio/desktop/ihor@2x.jpg" alt="Ігор" >
+              </picture>
+               <div class="team-box">
                 <h3 class="team-box__title">Ігор Дем'яненко</h3>
                 <p class="team-text">Product Designer</p>
                 <ul class="socialTeam__list list">
@@ -169,7 +195,18 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team-icon" src="images/olha.jpg" alt="Ольга" width="270">
+              <picture>
+                <source srcset="./images/studio/desktop/olha.jpg 1x, 
+                                ./images/studio/desktop/olha@2x.jpg 2x" 
+                media="(min-width: 1200px)">
+                <source srcset="./images/studio/tablet/olha.jpg 1x, 
+                                ./images/studio/tablet/olha@2x.jpg 2x" 
+                media="(min-width: 768px)">
+                <source srcset="./images/studio/mobile/olha.jpg 1x, 
+                                ./images/studio/mobile/olha@2x.jpg 2x" 
+                media="(max-width: 767px)">
+                <img class="team-icon" src="./images/studio/desktop/olha@2x.jpg" alt="Ольга" max-width="450">
+              </picture>
               <div class="team-box">
                 <h3 class="team-box__title">Ольга Рєпіна</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -206,7 +243,18 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team-icon" src="images/mykola.jpg" alt="Микола" width="270">
+              <picture>
+                <source srcset="./images/studio/desktop/mykola.jpg 1x, 
+                                ./images/studio/desktop/mykola@2x.jpg 2x" 
+                media="(min-width: 1200px)">
+                <source srcset="./images/studio/tablet/mykola.jpg 1x, 
+                                ./images/studio/tablet/mykola@2x.jpg 2x" 
+                media="(min-width: 768px)">
+                <source srcset="./images/studio/mobile/mykola.jpg 1x, 
+                                ./images/studio/mobile/mykola@2x.jpg 2x" 
+                media="(max-width: 767px)">
+                <img class="team-icon" src="./images/studio/desktop/mykola@2x.jpg" alt="Микола" max-width="450">
+              </picture>
               <div class="team-box">
                 <h3 class="team-box__title">Микола Тарасов</h3>
                 <p class="team-text">Marketing</p>
@@ -243,7 +291,18 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team-icon" src="images/myhailo.jpg" alt="Михайло" width="270">
+              <picture>
+                <source srcset="./images/studio/desktop/myhailo.jpg 1x, 
+                                ./images/studio/desktop/myhailo@2x.jpg 2x" 
+                media="(min-width: 1200px)">
+                <source srcset="./images/studio/tablet/myhailo.jpg 1x, 
+                                ./images/studio/tablet/myhailo@2x.jpg 2x" 
+                media="(min-width: 768px)">
+                <source srcset="./images/studio/mobile/myhailo.jpg 1x, 
+                                ./images/studio/mobile/myhailo@2x.jpg 2x" 
+                media="(max-width: 767px)">
+                <img class="team-icon" src="./images/studio/desktop/myhailo@2x.jpg" alt="Михайло" max-width="450">
+              </picture>
               <div class="team-box">
                 <h3 class="team-box__title">Михайло Єрмаков</h3>
                 <p class="team-text">UI Designer</p>
