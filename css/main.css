@@ -505,6 +505,7 @@ body {
   .hero {
     padding: 200px 0;
     height: 600px;
+    background-position: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/studio/desktop/hero.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/studio/desktop/hero.jpg);
   }
@@ -795,16 +796,12 @@ body {
   }
 }
 .team-box {
-  padding: 30px 122px 24px 122px;
-}
-@media screen and (min-width: 768px) {
-  .team-box {
-    padding: 30px 74px 24px 74px;
-  }
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 @media screen and (min-width: 1200px) {
   .team-box {
-    padding: 30px 32px;
+    padding-bottom: 32px;
   }
 }
 .team-box__title {
