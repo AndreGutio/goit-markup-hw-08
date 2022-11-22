@@ -11,6 +11,9 @@
         text-align: left;
         margin-bottom: 9px;
         width: 231px;
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 }
 

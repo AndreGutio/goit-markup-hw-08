@@ -7,7 +7,9 @@
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -16,7 +18,7 @@
                 url(../../images/studio/mobile/hero@2x.jpg);
         }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
                 url(../../images/studio/tablet/hero.jpg);
@@ -30,8 +32,6 @@
 }
     @media screen and (min-width: 1200px) {
         padding: 200px 0;
-        height: 600px;
-        background-position: center;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
                 url(./../images/studio/desktop/hero.jpg);
