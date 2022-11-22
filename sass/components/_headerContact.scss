@@ -39,14 +39,43 @@
 }
 
 .contact-icon {
-    fill: currentColor;
-    margin-right: 10px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 768px) {
+        width: 14px;
+        height: 10px;
+        fill: currentColor;
+        margin-right: 10px;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    .header-contact__link:hover &,
-    .header-contact__link:focus & {
+        .header-contact__link:hover &,
+        .header-contact__link:focus & {
+            fill: var(--primary-accent-color);
+            }
+    @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+    }
+    }
+}
+.contact-icons {
+    @media screen and (min-width: 768px) {
+        width: 10px;
+        height: 14px;
+        fill: currentColor;
+        margin-right: 10px;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        .header-contact__link:hover &,
+        .header-contact__link:focus & {
         fill: var(--primary-accent-color);
     }
+    @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+    }
+
+}
 }
