@@ -1,5 +1,9 @@
-// .footer-address {
-// } 
+.footer-address {
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+} 
 
 /*.footer-address__list {
 } */

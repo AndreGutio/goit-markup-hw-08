@@ -2,7 +2,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
+    width: 450px;
     /* height: 581px; */
     padding: 40px;
     background-color: var(--primary-bg-color);
@@ -11,6 +11,10 @@
     transition-property: transform, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 
     /*.modal-close*/
     .modal.is-hidden & {

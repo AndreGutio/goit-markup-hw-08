@@ -1,5 +1,6 @@
 .form-agreement {
-    width: 425px;
+    display: flex;
+    width: 370px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -8,10 +9,15 @@
         font-family: "Roboto";
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
-        line-height: calc(24 / 14);
+        font-size: 12px;
+        line-height: calc(14 / 12);
         letter-spacing: 0.03em;
         color: #757575;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 425px;font-size: 14px;
+        line-height: calc(24 / 14);
     }
 }
 
