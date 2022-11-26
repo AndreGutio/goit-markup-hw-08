@@ -512,7 +512,6 @@ body {
 
 .hero {
   padding: 118px 0;
-  height: 600px;
   max-width: 1600px;
   background-color: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/studio/mobile/hero.jpg);
@@ -520,6 +519,9 @@ body {
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -1030,6 +1032,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__wrap {
     gap: 70px;
+    margin-bottom: 0;
   }
 }
 
